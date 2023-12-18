@@ -1,0 +1,133 @@
+@import 'reset';
+
+//fonts
+$raleway: 'Raleway', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$kaushan: 'Kaushan Script', cursive;
+
+//colors
+$pink: #F38281;
+$yellow: #F9EFCF;
+$orange: #F4BF87;
+$green: #95E1D3;
+$black: #2D3033;
+$gray: #C6CBCD;
+$white: #fff;
+$whitedark: #F8F8F8;
+$bg_pink: linear-gradient(360deg, rgba(237, 215, 137, 0.8) 0%, rgba(233, 130, 131, 0.8) 100%);
+
+//line
+%line {
+  border-bottom: 4px solid $pink;
+  width: 170px;
+  margin: 0 auto;
+}
+
+
+body {
+  font-family: $raleway;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $black;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+
+.heading {
+
+  text-align: center;
+
+  &__subtitle {
+    font-family: $kaushan;
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin: 37px 0 44px 0;
+  }
+
+  &__line {
+    @extend %line;
+    margin-bottom: 38px;
+  }
+
+}
+
+.about {
+  padding: 60px 0 106px 0;
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    gap: 30px;
+  }
+
+  &__item {
+    height: 338px;
+    width: 370px;
+    position: relative;
+
+    &_hover {
+      display: none;
+
+      .down {
+        width: 370px;
+        height: 338px;
+        background-color: $green;
+      }
+
+      .up {
+        padding: 129px 0 111px;
+        width: 370px;
+        height: 338px;
+        background: $bg_pink;
+        position: absolute;
+        top: -16px;
+        left: -16px;
+        text-align: center;
+
+        a {
+
+          img {
+            width: 40px;
+            height: 40px;
+          };
+
+          p {
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: $white;
+          }
+
+        }
+      }
+      
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    &:hover &_hover {
+      display: block;
+      position: absolute;
+      transition: all 0.8s ease;
+    }
+  }
+
+}
