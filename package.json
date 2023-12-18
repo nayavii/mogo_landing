@@ -1,0 +1,21 @@
+{
+  "name": "mogo_landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel index.html --open"
+  },
+  "keywords": [
+    "npm",
+    "ssas",
+    "parcel",
+    "nodejs"
+  ],
+  "author": "Hanna Alesik <alesikhanna@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3"
+  }
+}
