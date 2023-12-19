@@ -1,5 +1,7 @@
 @import 'reset';
 
+
+
 //fonts
 $raleway: 'Raleway', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
@@ -21,6 +23,13 @@ $bg_pink: linear-gradient(360deg, rgba(237, 215, 137, 0.8) 0%, rgba(233, 130, 13
   border-bottom: 4px solid $pink;
   width: 170px;
   margin: 0 auto;
+}
+
+//titles
+%title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 
@@ -57,9 +66,12 @@ body {
     margin: 37px 0 44px 0;
   }
 
+  &__text {
+    margin-top: 38px;
+  }
+
   &__line {
     @extend %line;
-    margin-bottom: 38px;
   }
 
 }
@@ -129,5 +141,201 @@ body {
       transition: all 0.8s ease;
     }
   }
+
+}
+
+.futures {
+  background: $green;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      text-align: center;
+      color: $white;
+      padding: 64px 43px;
+      border-left: 1px solid $white;
+
+      &:last-child {
+        border-right: 1px solid $white;
+      }
+
+
+      p {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 19px;
+      }
+
+      span {
+        line-height: 28px;
+        font-weight: 500;
+        font-size: 24px;
+        
+      }
+    }
+  }
+
+
+}
+
+.amazservices {
+  padding: 60px 0 110px 0;
+
+  &__wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 159px 30px ;
+  }
+
+  &__item {
+    width: 370px;
+    display: flex;
+    gap: 30px;
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__title {
+      @extend %title;
+      line-height: 28px;
+      margin: 19px 0 31px 0;
+    }
+
+    &__desc {
+      width: 270px;
+    }
+
+  }
+
+}
+
+.unique {
+  padding: 60px 0 57px 0;
+  background: $whitedark url(../img/unique_bg.jpg) no-repeat center center / cover;
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+
+    &__tablet {
+      text-align: center;
+      margin-top: 59px;
+    }
+  
+    &__phone {
+      position: absolute;
+      bottom: -100px;
+      right: 195px;
+    }
+
+  }
+
+  
+}
+
+.service {
+  padding: 60px 0 114px;
+
+  .accordion {
+    margin-top: 80px;
+    height: 483px;
+    background-color: #F38281;
+  }
+}
+
+.team {
+  padding: 102px 0 88px;
+
+  &__items {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+  }
+
+  &__item {
+    text-align: center;
+
+    &_hover {
+      display: none;
+
+      .hover__wrapper {
+        padding: 207px 0 175px;
+        width: 370px;
+        height: 424px;
+        background: $bg_pink;
+        position: absolute;
+        top: -16px;
+        left: -16px;
+        text-align: center;
+
+        .icon-facebook {
+          color: $pink;
+          background-color: $orange;
+          width: 42px;
+          height: 42px;
+          text-align: center;
+          align-items: center;
+
+          &:hover {
+            background-color: $pink;
+            color: $white;
+          }
+
+
+        }
+
+      }
+
+
+
+        a {
+
+          img {
+            width: 40px;
+            height: 40px;
+          };
+
+          p {
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: $white;
+          }
+
+        }
+      
+      
+    }
+
+    &__title {
+      margin: 26px 0 31px 0;
+      @extend %title;
+    }
+
+    &__desc {
+      text-transform: uppercase;
+    }
+
+    &:hover &_hover {
+      display: block;
+      position: absolute;
+      transition: all 0.8s ease;
+    }
+
+
+  }
+
+
 
 }
