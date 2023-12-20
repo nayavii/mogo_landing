@@ -1,7 +1,6 @@
 @import 'reset';
 
 
-
 //fonts
 $raleway: 'Raleway', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
@@ -47,6 +46,7 @@ body {
 }
 
 
+// heading
 
 .heading {
 
@@ -75,6 +75,61 @@ body {
   }
 
 }
+
+//swiper
+.swiper-slide {
+  padding: 0 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+
+  &__img img {
+    object-fit: cover;
+    width: 170px;
+    height: 170px;
+  }
+
+  &__inf {
+    position: relative;
+
+    &__text {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 500;
+      width: 770px;
+      color: #A9AFB1;
+      line-height: 28px;
+      margin-bottom: 31px;
+    }
+
+    &__line {
+      @extend %line;
+      width: 70px;
+      margin: 0;
+      position: absolute;
+      bottom: 38px;
+      left: 0;
+    }
+
+    &__name {
+      margin-left: 126px;
+      color: $black;
+      font-family: $kaushan;
+      font-size: 30px;
+      line-height: 44px;
+    }
+    
+  }
+
+
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: #C6CBCD;
+  font-size: 30px;
+}
+
+// about section
 
 .about {
   padding: 60px 0 106px 0;
@@ -143,6 +198,7 @@ body {
   }
 
 }
+// futures section
 
 .futures {
   background: $green;
@@ -180,6 +236,7 @@ body {
 
 
 }
+// amazservices section
 
 .amazservices {
   padding: 60px 0 110px 0;
@@ -216,6 +273,8 @@ body {
 
 }
 
+// unique section
+
 .unique {
   padding: 60px 0 57px 0;
   background: $whitedark url(../img/unique_bg.jpg) no-repeat center center / cover;
@@ -237,8 +296,9 @@ body {
 
   }
 
-  
 }
+
+// service section
 
 .service {
   padding: 60px 0 114px;
@@ -250,6 +310,15 @@ body {
   }
 }
 
+// review1 section
+
+.reviews1 {
+  padding: 42px 0 42px 0;
+  background-color: $whitedark;
+}
+
+// team section
+
 .team {
   padding: 102px 0 88px;
 
@@ -258,7 +327,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
   }
 
   &__item {
@@ -277,45 +345,24 @@ body {
         left: -16px;
         text-align: center;
 
-        .icon-facebook {
+        .icon-font {
+          display: inline-block;
           color: $pink;
-          background-color: $orange;
+          background-color: $yellow;
           width: 42px;
           height: 42px;
-          text-align: center;
-          align-items: center;
+          font-size: 30px;
+          line-height: 47px;
 
           &:hover {
             background-color: $pink;
             color: $white;
           }
 
-
         }
 
       }
-
-
-
-        a {
-
-          img {
-            width: 40px;
-            height: 40px;
-          };
-
-          p {
-            margin-top: 30px;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            text-transform: uppercase;
-            color: $white;
-          }
-
-        }
-      
-      
+  
     }
 
     &__title {
@@ -333,9 +380,85 @@ body {
       transition: all 0.8s ease;
     }
 
-
   }
 
+
+
+}
+
+//partner section
+
+.partners {
+  padding: 42px 0;
+  background-color: $whitedark;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// review2 section
+
+.reviews2 {
+  padding: 48px 0 48px 0;
+
+  .swiper-slide__img img {
+    border-radius: 85px;
+  }
+
+
+}
+
+// clients section
+
+.clients {
+  padding: 60px 0 64px 0;
+  background: $whitedark url(../img/clients_bg.jpg) no-repeat center center / cover;
+
+  &__wrapper {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 76px 50px;
+  }
+
+  &__item {
+    width: 550px;
+    display: flex;
+    gap: 50px;
+    
+
+    &__img img  {
+      border-radius: 85px;
+      object-fit: cover;
+      width: 130px;
+      height: 130px;
+    }
+
+    &__name {
+      @extend %title;
+    }
+
+    &__job {
+      text-transform: uppercase;
+      margin: 11px 0 31px 0;
+    }
+
+    &__line {
+      @extend %line;
+      margin: 0;
+      width: 70px;
+
+    }
+
+    &__text {
+      width: 369px;
+      margin: 55px 0 0 0;
+    }
+  }
+  
 
 
 }

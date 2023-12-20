@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MoGo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/iconsfont.scss">
   <link rel="stylesheet" href="./scss/main.scss">
   
 </head>
@@ -163,6 +165,56 @@
       <div class="accordion"></div>
     </div>
   </section>
+  <section class="reviews reviews1">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/icon_review.svg" alt="reviews icon">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Jon Doe</p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/icon_review.svg" alt="reviews icon">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Emma Martinez</p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/icon_review.svg" alt="reviews icon">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Michael White</p>
+
+            </div>
+          </div>
+          ...
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+    </div>
+  </section>
   <section class="team">
     <div class="container">
       <div class="heading">
@@ -175,12 +227,11 @@
         <div class="team__item">
           <div class="team__item_hover">
             <div class="hover__wrapper">
-              <a class="icon-facebook fa-brands fa-facebook-f"></a>
-              <a class="icon-facebook fa-brands fa-twitter"></a>
-              <a class="icon-facebook fa-brands fa-pinterest-p"></a>
-              <a class="icon-facebook fa-brands fa-instagram"></a>
+              <a href="https://www.facebook.com/" target="_blank" class="icon-font icon-facebook"></a>
+              <a href="https://twitter.com/" target="_blank" class="icon-font icon-twitter"></a>
+              <a href="https://www.pinterest.com/" target="_blank" class="icon-font icon-pinterest"></a>
+              <a href="https://www.instagram.com/" target="_blank" class="icon-font icon-instagram"></a>
             </div>
-
           </div>
           <img src="./img//team/Kadin_Dias.jpg" alt="Kadin Dias">
           <p class="team__item__title">Kadin Dias</p>
@@ -189,12 +240,11 @@
         <div class="team__item">
           <div class="team__item_hover">
             <div class="hover__wrapper">
-              <a class="icon-facebook fa-brands fa-facebook-f"></a>
-              <a class="icon-facebook fa-brands fa-twitter"></a>
-              <a class="icon-facebook fa-brands fa-pinterest-p"></a>
-              <a class="icon-facebook fa-brands fa-instagram"></a>
+              <a href="https://www.facebook.com/" target="_blank" class="icon-font icon-facebook"></a>
+              <a href="https://twitter.com/" target="_blank" class="icon-font icon-twitter"></a>
+              <a href="https://www.pinterest.com/" target="_blank" class="icon-font icon-pinterest"></a>
+              <a href="https://www.instagram.com/" target="_blank" class="icon-font icon-instagram"></a>
             </div>
-
           </div>
           <img src="./img/team/Zain_Calzoni.jpg" alt="Zain Calzoni">
           <p class="team__item__title">Zain Calzoni</p>
@@ -203,12 +253,11 @@
         <div class="team__item">
           <div class="team__item_hover">
             <div class="hover__wrapper">
-              <a class="icon-facebook fa-brands fa-facebook-f"></a>
-              <a class="icon-facebook fa-brands fa-twitter"></a>
-              <a class="icon-facebook fa-brands fa-pinterest-p"></a>
-              <a class="icon-facebook fa-brands fa-instagram"></a>
+              <a href="https://www.facebook.com/" target="_blank" class="icon-font icon-facebook"></a>
+              <a href="https://twitter.com/" target="_blank" class="icon-font icon-twitter"></a>
+              <a href="https://www.pinterest.com/" target="_blank" class="icon-font icon-pinterest"></a>
+              <a href="https://www.instagram.com/" target="_blank" class="icon-font icon-instagram"></a>
             </div>
-
           </div>
           <img src="./img/team/Charlie_George.jpg" alt="Charlie George">
           <p class="team__item__title">Charlie George</p>
@@ -217,5 +266,121 @@
       </div>
     </div>
   </section>
+
+  <section class="partners">
+    <div class="container">
+      <img src="./img/partners/partner1.svg" alt="partner1">
+      <img src="./img/partners/partner2.svg" alt="partner2">
+      <img src="./img/partners/partner3.svg" alt="partner3">
+      <img src="./img/partners/partner4.svg" alt="partner4">
+      <img src="./img/partners/partner5.svg" alt="partner5">
+      <img src="./img/partners/partner6.svg" alt="partner6">
+    </div>
+  </section>
+
+
+  <section class="reviews reviews2">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/Eva_Harrison.jpg" alt="Eva Harrison">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Eva Harrison</p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/Liam_Wilson.jpg" alt="Liam Wilson">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Liam Wilson</p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./img/Olivia_Johnson.jpg" alt="Olivia Johnson">
+            </div>
+            <div class="swiper-slide__inf">
+              <p class="swiper-slide__inf__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <div class="swiper-slide__inf__line"></div>
+              <p class="swiper-slide__inf__name">Olivia Johnson</p>
+
+            </div>
+          </div>
+          ...
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <div class="heading">
+        <p class="heading__subtitle">Happy Clients</p>
+        <h2>what people say</h2>
+        <div class="heading__line"></div>
+      </div>
+      <div class="clients__wrapper">
+        <div class="clients__item">
+          <div class="clients__item__img"><img src="./img/Phillip_Culhane.jpg" alt="Phillip Culhane"></div>
+          <div>
+            <p class="clients__item__name">Phillip Culhane</p>
+            <p class="clients__item__job">photographer</p>
+            <div class="clients__item__line"></div>
+            <p class="clients__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients__item">
+          <div class="clients__item__img"><img src="./img/Paityn_Press.jpg" alt="Paityn Press"></div>
+          <div>
+            <p class="clients__item__name">Paityn Press</p>
+            <p class="clients__item__job">photographer</p>
+            <div class="clients__item__line"></div>
+            <p class="clients__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients__item">
+          <div class="clients__item__img"><img src="./img/Dulce_Gouse.jpg" alt="Dulce Gouse"></div>
+          <div>
+            <p class="clients__item__name">Dulce Gouse</p>
+            <p class="clients__item__job">photographer</p>
+            <div class="clients__item__line"></div>
+            <p class="clients__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients__item">
+          <div class="clients__item__img"><img src="./img/Zaire_Schleifer.jpg" alt="Zaire Schleifer"></div>
+          <div>
+            <p class="clients__item__name">Zaire Schleifer</p>
+            <p class="clients__item__job">photographer</p>
+            <div class="clients__item__line"></div>
+            <p class="clients__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
