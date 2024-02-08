@@ -40,9 +40,6 @@ body {
   color: $black;
 }
 
-
-
-
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -169,6 +166,7 @@ body {
     line-height: 16px;
     color: $white;
     text-transform: uppercase;
+    transition: all ease 0.8s;
 
   }
 
@@ -222,7 +220,7 @@ body {
     text-transform: uppercase;
     margin: 74px 0 116px;
     display: inline-block;
-    transition: all ease 0.3s;
+    transition: all ease 0.8s;
   }
 
   &__btn:hover {
@@ -240,13 +238,17 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    transition: all ease 0.8s;
+
+    &__item {
+      transition: all ease 0.8s;
+    }
+    
     
     &__item:hover {
       
       .banner__slider__line {
         border-color: $white;
-        transition: all ease 0.8s;
+        
         
         &::after {
           content: '';
@@ -255,6 +257,7 @@ body {
           left: 0;
           top: 0;
           width: 70px;
+          
         }
 
       }
@@ -271,6 +274,7 @@ body {
       width: 270px;
       margin-bottom: 21px;
       position: relative;
+      
     }
     
 
@@ -483,8 +487,6 @@ body {
     }
   }
 
-
-
   &__accordion {
     flex: 1;
   
@@ -565,21 +567,9 @@ body {
     }
 
 
-
-
-  }
-
-
-  
-
-  
-
-
-
-  .accordion {
-
   }
 }
+
 
 // review1 section
 
@@ -602,6 +592,7 @@ body {
 
   &__item {
     text-align: center;
+    position: relative;
 
     &_hover {
       opacity: 0;
@@ -624,6 +615,7 @@ body {
           height: 42px;
           font-size: 30px;
           line-height: 47px;
+          transition: all ease 0.3s;
 
           &:hover {
             background-color: $pink;
@@ -694,7 +686,7 @@ body {
     }
 
     &_hover {
-      display: none;
+      opacity: 0;
       position: absolute;
       padding: 118px 0 0;
       background: $bg_pink;
@@ -703,7 +695,7 @@ body {
       height: 100%;
 
       a {
-   
+
         img {
           width: 42px;
           height: 42px;
@@ -727,7 +719,7 @@ body {
     }
 
     &:hover &_hover {
-      display: block;
+      opacity: 1;
       position: absolute;
       transition: all 0.8s ease;
 
