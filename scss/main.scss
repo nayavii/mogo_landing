@@ -40,6 +40,9 @@ body {
   color: $black;
 }
 
+
+
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -237,11 +240,13 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: left;
-
+    transition: all ease 0.8s;
+    
     &__item:hover {
-
+      
       .banner__slider__line {
         border-color: $white;
+        transition: all ease 0.8s;
         
         &::after {
           content: '';
@@ -266,7 +271,6 @@ body {
       width: 270px;
       margin-bottom: 21px;
       position: relative;
-    
     }
     
 
@@ -305,9 +309,12 @@ body {
     height: 338px;
     width: 370px;
     position: relative;
+    top: 0;
+    left: 0;
 
     &_hover {
-      display: none;
+      opacity: 0;
+      position: absolute;
 
       .down {
         width: 370px;
@@ -351,7 +358,7 @@ body {
     }
 
     &:hover &_hover {
-      display: block;
+      opacity: 1;
       position: absolute;
       transition: all 0.8s ease;
     }
@@ -463,10 +470,114 @@ body {
 .service {
   padding: 60px 0 114px;
 
-  .accordion {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
     margin-top: 80px;
     height: 483px;
-    background-color: #F38281;
+
+    img {
+      flex: 1;
+      height: 483px;
+      object-fit: cover;
+    }
+  }
+
+
+
+  &__accordion {
+    flex: 1;
+  
+
+    .accordionItem {
+      border: 1px solid rgb(198, 203, 205);
+
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      
+
+      .accordionTitle {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: 92px;
+        border-bottom: 1px solid rgb(198, 203, 205);
+        padding: 0 18px 0 22px;
+  
+        div {
+          width: 42px;
+          height: 42px;
+          margin-right: 40px;
+        }
+  
+        img {
+          width: 42px;
+          height: 42px;
+          object-fit: cover;
+        }
+  
+        p {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28px;
+          text-transform: uppercase;
+        }
+  
+        & + .accordionContent {
+          display: none;
+        }
+        
+        &.is-open + .accordionContent {
+          display: block;
+        }
+  
+  
+      }
+
+      .accordionContent {
+        padding: 18px 0 18px 22px;
+        height: 163px;
+
+        p {
+          width: 524px;
+          height: 126px;
+          overflow-y: scroll;
+          padding: 0 54px 0 0;
+          
+        }
+
+        p::-webkit-scrollbar {
+          width: 7px;               /* ширина всей полосы прокрутки */
+        }
+        
+        p::-webkit-scrollbar-track {
+          background: #F5F5F5;        /* цвет зоны отслеживания */
+        }
+        
+        p::-webkit-scrollbar-thumb {
+          background-color: $green;    /* цвет бегунка */
+        }
+
+
+      }
+
+    }
+
+
+
+
+  }
+
+
+  
+
+  
+
+
+
+  .accordion {
+
   }
 }
 
@@ -493,7 +604,7 @@ body {
     text-align: center;
 
     &_hover {
-      display: none;
+      opacity: 0;
 
       .hover__wrapper {
         padding: 207px 0 175px;
@@ -535,7 +646,7 @@ body {
     }
 
     &:hover &_hover {
-      display: block;
+      opacity: 1;
       position: absolute;
       transition: all 0.8s ease;
     }
